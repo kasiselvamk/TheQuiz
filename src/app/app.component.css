@@ -1,0 +1,23 @@
+.quiz-g1-div {
+    height: 92%;
+    width: 92%;
+}
+.chart-g2-div{
+    height: 92%;
+}
+
+.mat-grid-list{
+    position: inherit;
+}
+.mat-grid-tile
+{
+    overflow: auto;
+    max-height: 92%;
+    margin-right: -100px;
+    padding-right: 100px;
+}
+.css-header{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}

@@ -1,0 +1,56 @@
+.lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 21px;
+}
+.s-code{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: blue;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+.text-justify {
+    text-align: justify;
+}
+.code-p {
+    font-size: 90%;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 15px;
+
+ }  
+  .example-margin {
+    margin: 0 10px;
+  }
+  .cb-wrapper {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-flow: row;
+    
+  }
+  .button-submit{
+    position: absolute;
+    right: 0;
+    margin: 0 100px 0 0;
+  }
+  .h5-green{
+    color: green;
+
+  }
+  .h5-red {
+color: red;
+  }
