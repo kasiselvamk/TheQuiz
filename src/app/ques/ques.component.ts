@@ -3,6 +3,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { DataService } from '../data.service';
 import { MatDialog,MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormGroup, FormBuilder } from '@angular/forms';
+
 @Component({
   selector: 'app-ques',
   templateUrl: './ques.component.html',
@@ -14,7 +15,7 @@ export class QuesComponent implements OnInit {
  q : Number;
  dataObj : any;
  formoptions: FormGroup;
-
+ codeblock : boolean = false;
    constructor(private dataService : DataService,public dialog: MatDialog,public fb: FormBuilder) {
    
   }
@@ -41,6 +42,7 @@ export class QuesComponent implements OnInit {
       this.options= this.dataObj.opt;
       this.q     = this.dataObj.q;
       this.qdate = this.dataObj.qdate;
+      this.codeblock = this.dataObj.codeblock;
       this.formoptions.patchValue({
         hiddenq: this.q,
         qdate: this.qdate,

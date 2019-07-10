@@ -11,20 +11,27 @@
     <div *ngFor="let p3item of p3">{{p3item}}</div>
 </div>
 
-<form  [formGroup]="formoptions" (ngSubmit)="onSubmit()" > 
-        <div class="text-justify"  formArrayName="ckBox" >
-                <section class="cb-wrapper" >
-                    <mat-checkbox color="warn" [formControlName]="i"  *ngFor="let optitem of options; let i=index" class="example-margin" >
-                        <p>{{optitem}}</p>
-                    </mat-checkbox>
-                </section>
-            </div>
-<input type="hidden"  formControlName='hiddenq' >
-<input type="hidden"  formControlName='qdate' >
+<form [formGroup]="formoptions" (ngSubmit)="onSubmit()">
+    <div class="text-justify" formArrayName="ckBox">
+        <section class="cb-wrapper">
+            <mat-checkbox color="warn" [formControlName]="i" *ngFor="let optitem of options; let i=index"
+                class="example-margin">
+                <div *ngIf="codeblock" class="code-p">
+                    <pre><p *ngFor="let optp of optitem" >{{optp}}</p> </pre>
+                </div>
+                <div *ngIf="!codeblock">
+                    <p *ngFor="let optp of optitem">{{optp}}</p>
+                </div>
 
-<div class="button-submit">
-    <button mat-raised-button  type="submit" color="warn">Submit & Check your answers</button>
-</div>
+            </mat-checkbox>
+        </section>
+    </div>
+    <input type="hidden" formControlName='hiddenq'>
+    <input type="hidden" formControlName='qdate'>
+
+    <div class="button-submit">
+        <button mat-raised-button type="submit" color="warn">Submit & Check your answers</button>
+    </div>
 </form>
 
 <BR>

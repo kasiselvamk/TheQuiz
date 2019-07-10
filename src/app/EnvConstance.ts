@@ -1,2 +1,2 @@
 'use strict';
-export const BASE_URL="localhost:8080";
+export const BASE_URL="infxlmps2d:8080";
