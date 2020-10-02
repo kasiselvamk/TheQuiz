@@ -9,7 +9,7 @@ import { ChartDataService } from '../chart.data.service.js';
 })
 export class ChartComponent implements OnInit {
 
-  @ViewChild('myChart', { static: false }) myChart;
+  @ViewChild('myChart') myChart;
   myChartObj: any;
   constructor(private chartDataService: ChartDataService) {
   }
